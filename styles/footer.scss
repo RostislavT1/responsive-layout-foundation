@@ -18,7 +18,6 @@
     &__line {
         border-top: 1px solid $color-dark-gray;
         width: 100%;
-        opacity: 0.1;
         margin: 0;
         margin-top: 40px;
 
@@ -59,7 +58,7 @@
 .downloads {
     display: flex;
     justify-content: center;
-    margin: 25px 15px 0px 15px;
+    margin: 32px 15px 0px 15px;
 
     @include for-large-up {
         margin: 0;
@@ -79,6 +78,7 @@
 }
 
 .additional-navigation {
+    margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
     display: flex;
@@ -91,7 +91,11 @@
     }
 
     &__column {
-        margin-top: 30px;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
 
         @include for-large-up {
             margin-top: 0;
@@ -195,11 +199,11 @@
         margin-top: 20px;
     }
 
-    &__descripion {
+    &__description {
         font-size: 18px;
         line-height: 25px;
         text-align: center;
-        margin-top: 20px;
+        color: $text-color-light-grey;
     }
 
     &__image {
