@@ -11,6 +11,7 @@
     }
 
     &__title {
+        padding: 0;
         margin: 0;
         font-size: 50px;
         line-height: 50px;
@@ -94,8 +95,11 @@
 
 .headline-content {
     padding: 35px 15px 33px 15px;
+    margin: auto;
 
     @include for-large-up {
+        padding: 0;
+        padding-bottom: 15px;
         position: absolute;
         z-index: 1;
         margin: 0;

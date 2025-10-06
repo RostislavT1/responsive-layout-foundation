@@ -273,6 +273,12 @@
   margin: 0;
   margin-top: 18px;
 }
+.nav-links__item {
+  margin-bottom: 6px;
+}
+.nav-links__item:last-child {
+  margin-bottom: 0;
+}
 
 .footer-links {
   margin-left: 15px;
@@ -357,6 +363,7 @@
 .logo-vertical__image {
   height: 60px;
   width: 60px;
+  flex: 1;
 }
 
 .action-button {
@@ -396,6 +403,7 @@
   }
 }
 .headline__title {
+  padding: 0;
   margin: 0;
   font-size: 50px;
   line-height: 50px;
@@ -479,9 +487,12 @@
 
 .headline-content {
   padding: 35px 15px 33px 15px;
+  margin: auto;
 }
 @media screen and (min-width: 1400px) {
   .headline-content {
+    padding: 0;
+    padding-bottom: 15px;
     position: absolute;
     z-index: 1;
     margin: 0;
@@ -1197,6 +1208,7 @@
   .audience__text {
     margin-bottom: 34px;
     width: 556px;
+    text-align: center;
   }
 }
 .audience__buttons {
