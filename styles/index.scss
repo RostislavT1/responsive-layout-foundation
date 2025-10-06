@@ -1,0 +1,39 @@
+@import "breakpoints.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "common.scss";
+@import "headline.scss";
+@import "about.scss";
+@import "customers.scss";
+@import "features.scss";
+@import "tips.scss";
+@import "order.scss";
+@import "inbox.scss";
+@import "communicate.scss";
+@import "audience.scss";
+@import "review.scss";
+@import "hiring.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    color: #2b292d;
+}
+
+.page {
+    width: 100%;
+    overflow-x: hidden;
+
+    @include for-large-up {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 1400px;
+        margin: auto;
+    }
+}

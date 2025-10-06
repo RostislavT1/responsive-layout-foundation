@@ -1,0 +1,106 @@
+.review {
+    padding: 39px 15px 50px 15px;
+    width: 100%;
+    border-bottom: 1px solid $border-color-light-gray;
+
+    @include for-large-up {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        padding: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $text-color-light-blue;
+        margin: 0;
+        margin-bottom: 29px;
+
+        @include for-large-up {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0;
+        margin-bottom: 33px;
+
+        @include for-large-up {
+            width: 750px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+    }
+
+    &__customer {
+        margin-bottom: 40px;
+
+        @include for-large-up {
+            text-align: center;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__customer-name {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__customer-job {
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color-light-grey;
+        margin: 0;
+    }
+
+    &__image {
+        display: block;
+        margin: auto;
+
+        @include for-large-up {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.review-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    height: 12px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    @include for-large-up {
+        margin-bottom: 66px;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__item {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50px;
+        background-color: $color-gray;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-light-blue;
+        }
+    }
+
+    &__input:checked + .review-navigation__item {
+        background-color: $color-light-blue;
+    }
+}
