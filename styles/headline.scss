@@ -13,9 +13,9 @@
     &__title {
         margin: 0;
         font-size: 50px;
+        line-height: 50px;
         font-weight: 700;
         letter-spacing: -0.31px;
-        line-height: 50px;
 
         @include for-large-up {
             color: $text-color-onyx-black;
@@ -86,13 +86,14 @@
         width: 796px;
         height: 448px;
         margin-left: auto;
+        margin-bottom: 0;
         z-index: 0;
         right: -105px;
     }
 }
 
 .headline-content {
-    margin: 35px 15px 36px 15px;
+    margin: 35px 15px 33px 15px;
 
     @include for-large-up {
         position: absolute;

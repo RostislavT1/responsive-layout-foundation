@@ -2,7 +2,7 @@
   height: 64px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 15px;
 }
 @media screen and (max-width: 1399px) {
@@ -89,10 +89,7 @@
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;
-    margin-right: 50px;
-  }
-  .navigation__item:last-child {
-    margin-right: 0;
+    margin-left: 50px;
   }
   .navigation__item_selected {
     font-weight: 700;
@@ -105,6 +102,7 @@
     width: 8px;
     display: inline-block;
     margin-left: 11px;
+    display: none;
   }
 }
 
@@ -396,9 +394,9 @@
 .headline__title {
   margin: 0;
   font-size: 50px;
+  line-height: 50px;
   font-weight: 700;
   letter-spacing: -0.31px;
-  line-height: 50px;
 }
 @media screen and (min-width: 1400px) {
   .headline__title {
@@ -469,13 +467,14 @@
     width: 796px;
     height: 448px;
     margin-left: auto;
+    margin-bottom: 0;
     z-index: 0;
     right: -105px;
   }
 }
 
 .headline-content {
-  margin: 35px 15px 36px 15px;
+  margin: 35px 15px 33px 15px;
 }
 @media screen and (min-width: 1400px) {
   .headline-content {
@@ -785,6 +784,7 @@
 }
 .order__title {
   font-size: 40px;
+  line-height: 40px;
   font-weight: 700;
   letter-spacing: -0.25px;
   text-align: center;
@@ -798,11 +798,12 @@
   }
 }
 .order__text {
+  margin: 0;
   font-size: 22px;
   line-height: 32px;
   margin-top: 18px;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1400px) {
   .order__text {
     margin-top: 12px;
   }
@@ -827,6 +828,8 @@
 }
 .order__email::placeholder {
   color: #2b292d;
+  font-size: 18px;
+  line-height: 14px;
 }
 @media screen and (min-width: 1400px) {
   .order__email {
@@ -1164,6 +1167,7 @@
 }
 .audience__title {
   font-size: 40px;
+  line-height: 40px;
   font-weight: 700;
   letter-spacing: -0.36px;
   text-align: center;
@@ -1179,6 +1183,7 @@
   }
 }
 .audience__text {
+  margin: 0;
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 30px;
@@ -1249,10 +1254,12 @@
   border-radius: 8px;
   margin-bottom: 15px;
   cursor: pointer;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 1400px) {
   .target-profesion__block {
     max-width: 262px;
+    padding: 0;
   }
 }
 .target-profesion__block:hover {
